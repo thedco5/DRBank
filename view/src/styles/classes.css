@@ -1,0 +1,75 @@
+.foreground-primary {
+    color: var(--primary-color);
+}
+
+.foreground-inverted {
+    color: var(--inverted-color);
+}
+
+.foreground-greenish {
+    color: var(--greenish-color);
+}
+
+.foreground-redish {
+    color: var(--redish-color);
+}
+
+.light .foreground-primary.thematic {
+    color: var(--primary-color);
+}
+.dark .foreground-primary.thematic {
+    color: var(--light-hover);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.no-text-wrap {
+    text-wrap: nowrap;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.selected {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.adjust-empty:empty {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.spin-45 {
+    animation: sudden-rotate 1s steps(8, end) infinite;
+}
+
+@keyframes sudden-rotate {
+    0% { transform: rotate(0deg); }
+    12.5% { transform: rotate(45deg); }
+    25% { transform: rotate(90deg); }
+    37.5% { transform: rotate(135deg); }
+    50% { transform: rotate(180deg); }
+    62.5% { transform: rotate(225deg); }
+    75% { transform: rotate(270deg); }
+    87.5% { transform: rotate(315deg); }
+    100% { transform: rotate(360deg); }
+}

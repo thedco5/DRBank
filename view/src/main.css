@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url("./styles/structure.css");
+@import url("./styles/theme.css");
+@import url("./styles/html-tags.css");
+@import url("./styles/flex-container.css");
+@import url("./styles/classes.css");
+@import url("./styles/elements/comps-styles.css");
+
+* {
+    --primary-color: #2060a2;
+    --secondary-color: #4172a3;
+    --medium-color: #6591bd;
+    --light-hover: #a8bbce;
+    --light-bgr: #f0f7ff;
+    --dark-bgr: #29323b;
+    --lighter-dark-bgr: rgb(56, 74, 91);
+    --inverted-color: #df9f5d;
+    --redish-color: #A22060;
+    --greenish-color: #60A220;
+    --shadow: 0 0 .5em .25em rgba(0, 0, 0, 0.33);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

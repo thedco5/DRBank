@@ -1,0 +1,44 @@
+@import url("./buttons.css");
+@import url("./menus.css");
+@import url("./form.css");
+
+.link {
+
+    color: var(--medium-color);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.link-white {
+
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+
+.para-img {
+
+    width: min(16em, calc(100% - 1em));
+    height: auto;
+    border-radius: .5em;
+    border: .1em solid var(--medium-color);
+    border-bottom-width: .2em;
+    margin: .5em;
+
+    &.left {
+        float: left;
+    }
+
+    &.right {
+        float: right;
+    }
+
+}

@@ -1,0 +1,26 @@
+h1,
+h2,
+h3 {
+    margin: .5em 0;
+    text-align: center;
+}
+
+p {
+
+    margin: .25em;
+
+    &.center {
+        text-align: center;
+    }
+
+}
+
+hr {
+    width: 50%;
+    height: 0;
+    border: .1em solid var(--primary-color);
+}
+
+input {
+    font: inherit;
+}

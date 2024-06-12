@@ -1,0 +1,28 @@
+.light .theme {
+
+    background-color: var(--light-bgr);
+    color: black;
+    transition: .2s background-color, .2s color;
+
+    &.lighter {
+        background-color: white;
+    }
+
+}
+
+.dark .theme {
+
+    background-color: var(--dark-bgr);
+    color: white;
+    transition: .2s background-color, .2s color;
+
+    &.lighter {
+        background-color: var(--lighter-dark-bgr);
+    }
+
+}
+
+::selection {
+    background-color: var(--inverted-color);
+    color: white;
+}

@@ -1,0 +1,134 @@
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: .5em;
+    padding: .25em;
+
+    .link {
+        width: 12em;
+    }
+
+    .info {
+        background-color: var(--greenish-color);
+        color: white;
+        padding: .25em;
+        border-radius: .33em;
+        max-width: 12em;
+        text-align: center;
+    }
+
+    .warning {
+
+        background-color: var(--redish-color);
+        color: white;
+        padding: .25em;
+        border-radius: .33em;
+        max-width: 12em;
+        text-align: center;
+
+    }
+
+    .warning-text {
+        color: var(--redish-color);
+        max-width: 12em;
+        margin-top: 0;
+    }
+
+}
+
+label {
+
+    padding: .25em;
+    margin: .33em .5em 0 .5em;
+    width: 12em;
+
+    &.check-input {
+        width: 10em;
+        margin: 0;
+        margin-right: .5em;
+    }
+
+}
+
+input, .inputlike {
+
+    color: inherit;
+    width: 12em;
+    height: auto;
+    padding: .25em;
+    margin: 0 .5em .33em .5em;
+    border: none;
+    border-radius: .33em;
+    outline: none;
+    transition: .25s border;
+
+    &.check-input {
+        width: 1em;
+        margin: 0 .5em 0 1em;
+        accent-color: var(--primary-color);
+        
+    }
+
+    &::placeholder {
+        opacity: 1;
+        font-style: italic;
+    }
+
+}
+
+.inputlike {
+
+    padding: 0;
+
+    textarea {
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 2em;
+        height: 5em;
+        color: inherit;
+        font: inherit;
+        padding: .25em;
+        outline: none;
+        border: none;
+        border-radius: .33em;
+    }
+
+}
+
+button[type="submit"] {
+    width: 50%;
+}
+
+.light .theme input:not([type="submit"]), .light .theme .inputlike textarea {
+
+    background-color: var(--light-bgr);
+    border-bottom: 0.2em solid var(--light-hover);
+
+    &:focus {
+        border-bottom: 0.2em solid var(--primary-color);
+    }
+
+    &::placeholder {
+        color: var(--light-hover);
+    }
+
+}
+
+.dark .theme input:not([type="submit"]), .dark .theme .inputlike textarea {
+
+    background-color: var(--dark-bgr);
+    border-bottom: 0.2em solid var(--secondary-color);
+
+    &:focus {
+        border-bottom: 0.2em solid var(--light-hover);
+    }
+
+    &::placeholder {
+        color: var(--lighter-dark-bgr);
+    }
+
+}

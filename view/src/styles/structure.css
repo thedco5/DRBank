@@ -1,0 +1,50 @@
+body {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: "Rubik";
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+header {
+
+    background-color: var(--primary-color);
+    color: white;
+    position: sticky;
+    z-index: 16;
+    box-shadow: var(--shadow);
+    top: 0;
+
+    #image-link img {
+        height: 1.5em;
+        width: auto;
+        flex-grow: 0;
+        margin: .5em;
+    }
+
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+    padding: .25em;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+html, #root div {
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
+}

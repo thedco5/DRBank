@@ -1,0 +1,28 @@
+.container {
+
+    display: flex;
+
+    &.column {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    &.row {
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    &.overflow {
+        overflow: auto;
+    }
+
+    &.center {
+        justify-items: center;
+        align-items: center;
+    }
+    
+    &.justify {
+        justify-content: center;
+    }
+
+}
